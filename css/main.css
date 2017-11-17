@@ -18,20 +18,81 @@ header img{
   display: inline-block;
   margin-left: 40%;
 }
-.fa-user{
+header i{
   display: inline-block;
-  margin-left: 15%;
+  margin-left: 450px;
+  color: #848484;
 }
-#menu_local{
-  background-color: gray;
-  width: 100%;
-  height: 50%;
-  color: white;
+.fa{
   display: inline-block;
 }
-.pais{
-  margin-top: 150px;
+
+#menu_local ul {
+ list-style:none;
+ position: relative;
+ top: 130px;
 }
-li .anio{
-  margin-left: 150px;
+
+/* items del menu */
+
+#menu_local ul li {
+ background-color:#FFBF00;
+ border-radius: 7px;
+}
+#menu_local ul li:hover {
+  background:#FF8000;
+}
+/* enlaces del menu */
+
+#menu_local ul a {
+ display:block;
+ color:#fff;
+ text-decoration:none;
+ font-weight:400;
+ font-size:15px;
+ padding:10px;
+ text-transform:uppercase;
+ }
+ #menu_local ul li {
+ position:relative;
+ float: left;
+ margin-left: 10px;
+ padding:0;
+}
+/* menu desplegable */
+
+#menu_local ul ul {
+ display:none;
+ position:absolute;
+ top:100%;
+ left:0;
+ background:#eee;
+ padding:0;
+}
+
+/* items del menu desplegable */
+
+#menu_local ul ul li {
+
+ float:none;
+ width:150px
+}
+
+/* enlaces de los items del menu desplegable */
+
+#menu_local ul ul a {
+ line-height:120%;
+  padding:10px 15px;
+}
+
+/* items del menu desplegable al pasar el ratón */
+
+#menu_local ul li:hover > ul {
+ display:block;
+}
+.menu_sedes{
+  display: inline-block;
+  position: relative;
+  right: 150px;
+  margin-top: 200px;
 }
