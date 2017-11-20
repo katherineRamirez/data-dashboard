@@ -17,20 +17,23 @@ header img{
   height: auto;
   display: inline-block;
   margin-left: 40%;
+  margin-right: 35%;
 }
 header i{
   display: inline-block;
-  margin-left: 450px;
   color: #848484;
 }
-.fa{
+.fa-times{
+  position: relative;
+  right: 20px;
+  bottom: 4px;
   display: inline-block;
+  font-size: 32px;
 }
-
 #menu_local ul {
  list-style:none;
  position: relative;
- top: 130px;
+ top: 150px;
 }
 
 /* items del menu */
@@ -93,6 +96,54 @@ header i{
 .menu_sedes{
   display: inline-block;
   position: relative;
-  right: 150px;
-  margin-top: 200px;
+  right: 450px;
+  margin-top: 60px;
+}
+.clase_div{
+  position: relative;
+  background: #424242;
+  width: 400px;
+  height: 450px;
+  left: 5px;
+  border-radius: 7px;
+}
+.contenedor{
+  display: inline-block;
+  position: relative;
+  margin-left:500px;
+}
+
+.clase_img{
+  width: 30%;
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+.clase_p{
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  left: 180px;
+  bottom: 70px;
+}
+.clase_nav{
+  position: relative;
+  top: 50px;
+  left: 50px;
+  list-style: none;
+  font-size: 20px;
+}
+.clase_linea2, .clase_linea3{
+  margin-top: 50px;
+}
+.clase_a, .clase_a2, .clase_a3{
+  color: white;
+  text-decoration: none;
+}
+.clase_a:hover, .clase_a2:hover, .clase_a3:hover{
+  background: #FFBF00;
+  padding: 20px 60px;
+}
+.clase_activas{
+  
 }
