@@ -10,11 +10,21 @@
   <body>
   <header>
       <img src="assets/images/logo-laboratoria.svg">
+
       <i class="fa fa-bars fa-2x" id="hamburguesa" aria-hidden="true"></i>
       <i class="fa fa-times" id="equis" aria-hidden="true"></i>
 
-  </header>
-  <section id="menu_local">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </header>
+    <section id="menu_local">
+      <ul>
+        <li class="pais">Sede
+          <li>Chile
+            <li>Santiago</li>
+         </li>
+
+
+  
       <nav>
           <ul>
               <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>  Overview</a></li>
@@ -25,22 +35,83 @@
       </nav>
   </section>
 
+
   <select name="menu" id="sedes" class="menu_sedes">
    <option selected value="0"> Elige una Sede </option>
-       <optgroup label="Chile"> 
-       <option value="1" id="ciudad">Santiago</option> 
-   </optgroup> 
-   <optgroup label="México"> 
-       <option value="2" class="ciudad">Ciudad de México</option> 
-   </optgroup> 
-   <optgroup label="Perú"> 
-       <option value="3" class="ciudad">Lima</option> 
-       <option value="4" class="ciudad">Arequipa</option> 
-   </optgroup> 
-</select> 
+       <optgroup label="Chile">
+       <option value="1" id="ciudad">Santiago</option>
+   </optgroup>
+   <optgroup label="México">
+       <option value="2" class="ciudad">Ciudad de México</option>
+   </optgroup>
+   <optgroup label="Perú">
+       <option value="3" class="ciudad">Lima</option>
+       <option value="4" class="ciudad">Arequipa</option>
+   </optgroup>
+</select>
   <div id="contenedor_menu_hamburguesa" class="contenedor-hamburguesa"></div>
   <div id="contenedor_menu" class="contenedor"></div>
-  </body>   
+  </body>
+
+
+          <li>Perú
+            <li>Lima</li>
+            <li>Arequipa</li>
+          </li>
+
+        </li>
+
+        <li class="anio">Año
+          <li>2014</li>
+          <li>2015</li>
+          <li>2016</li>
+          <li>2017
+            <li>Generacion 1</li>
+            <li>Generacion 2</li>
+          </li>
+        </li>
+
+        <li class="sprint">Sprint
+          <li>Estadisticas Globales</li>
+          <li>Selecciona Sprint
+            <li>Sprint 1</li>
+            <li>Sprint 2</li>
+            <li>Sprint 3</li>
+          </li>
+          <li>Selecciona Turno
+            <li>AM</li>
+            <li>PM</li>
+          </li>
+        </li>
+
+          <li class="puntaje">Puntuacion
+              <li>Profesores</li>
+              <li>Jedi Masters</li>
+          </li>
+      </ul>
+    </section>
+    <section class="seccion_datos_generales">
+      <div id="bandera_pais">
+        <p>País</p>
+      <div class="bandera_muestra"></div>
+      </div>
+      <div id="alumnas_activas">
+        <i class="fa fa-user-plus fa-2x" aria-hidden="true"></i>
+        <p>Total Alumnas</p>
+        <h4>(Numero Aqui)</h4></div>
+      <div id="alumnas_retiradas">
+        <i class="fa fa-user-times fa-2x" aria-hidden="true"></i>
+        <p>Total Alumnas Retiradas</p>
+        <h4>(Numero Aqui)</h4></div>
+    </section>
+    <section class="grafico_1">
+    <div id="cuadro_texto">
+      <h3>Criterio de Evaluación Mínimo Requerido: 70%</h3><br>
+      <br>
+      <p>Alumnas que Superan Meta de Puntos: (texto)</p><br>
+      <p>Alumnas que No Superan Meta de Puntos: (texto)</p>
+    </div>
+    </section>
 
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>

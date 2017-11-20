@@ -4,6 +4,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 header{
   width: 100%;
@@ -146,4 +147,44 @@ header i{
 }
 .clase_activas{
   
+}
+/*.seccion_datos_generales{
+  width: 30%;
+  height: 150px;
+  display: inline-block;
+  background-color: darkgreen;
+  color: white;
+  border-radius: 5px;
+}*/
+#bandera_pais, #alumnas_activas, #alumnas_retiradas{
+  width: 15%;
+  height: 100px;
+  display: inline-block;
+  background-color: darkgreen;
+  color: white;
+  border-radius: 7px;
+}
+#alumnas_activas i, #alumnas_retiradas i{
+  display: inline-block;
+  padding: 8px 15px;
+}
+#alumnas_activas p h3, #alumnas_retiradas p h3{
+  display: inline-block;
+  /*padding: 10px 5px;*/
+}
+.bandera_muestra{
+  width: 100px;
+  height: 70px;
+  background-color: gray;
+  display: inline-block;
+}
+.grafico_1{
+  width: 45%;
+  height: 200px;
+  display: inline-block;
+  background-color: #F2F2F2;
+  border: 1px solid red;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
 }
