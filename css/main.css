@@ -8,7 +8,7 @@
 }
 header{
   width: 100%;
-  height: 100px;
+  height: 17%;
   background-color: #F3E2A9;
   position: relative;
   display: inline-block;
@@ -22,123 +22,125 @@ header img{
 }
 header i{
   display: inline-block;
+  position: relative;
+  right: 5em;
   color: #848484;
+}
+.clase-paises{
+  display: inline-block;
+  position: relative;
+  left: 1em;
+  margin-top: 5em;
 }
 .fa-times{
   position: relative;
-  right: 20px;
-  bottom: 4px;
   display: inline-block;
-  font-size: 32px;
+  font-size: 2em;
 }
-#menu_local ul {
- list-style:none;
- position: relative;
- top: 150px;
-}
-
-/* items del menu */
-
-#menu_local ul li {
- background-color:#FFBF00;
- border-radius: 7px;
-}
-#menu_local ul li:hover {
-  background:#FF8000;
-}
-/* enlaces del menu */
-
-#menu_local ul a {
- display:block;
- color:#fff;
- text-decoration:none;
- font-weight:400;
- font-size:15px;
- padding:10px;
- text-transform:uppercase;
- }
- #menu_local ul li {
- position:relative;
- float: left;
- margin-left: 10px;
- padding:0;
-}
-/* menu desplegable */
-
-#menu_local ul ul {
- display:none;
- position:absolute;
- top:100%;
- left:0;
- background:#eee;
- padding:0;
-}
-
-/* items del menu desplegable */
-
-#menu_local ul ul li {
-
- float:none;
- width:150px
-}
-
-/* enlaces de los items del menu desplegable */
-
-#menu_local ul ul a {
- line-height:120%;
-  padding:10px 15px;
-}
-
-/* items del menu desplegable al pasar el ratón */
-
-#menu_local ul li:hover > ul {
- display:block;
-}
-.menu_sedes{
+.clase-idiomas{
   display: inline-block;
   position: relative;
-  right: 450px;
-  margin-top: 60px;
+  left: 78em;
+  bottom: 2em;
+}
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    margin-top: 2em;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1em 1em;
+    transition: 0.3s;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.especializacion{
+  position: relative;
+  top: 2em;
+  left: 3em;
+}
+.javascript{
+  position: relative;
+  top: 6em;
+  left: 3em;
+  font-size: 1.30em;
+}
+.ux{
+  position: relative;
+  top: 10em;
+  right: 4em;
+  font-size: 1.30em;
+}
+.front-design{
+  position: relative;
+  top: 14em;
+  right: 11em;
+  font-size: 1.30em;
 }
 .clase_div{
   position: relative;
   background: #424242;
-  width: 400px;
-  height: 450px;
-  left: 5px;
-  border-radius: 7px;
+  width: 25em;
+  height: 30em;
+  left: 0.10em;
+  border-radius: 0.50em;
 }
 .contenedor{
   display: inline-block;
   position: relative;
-  margin-left:500px;
+  margin-left: 20em;
 }
 
 .clase_img{
   width: 30%;
   position: relative;
-  top: 20px;
-  left: 30px;
+  top: 1em;
+  left: 1em;
 }
 .clase_p{
   text-transform: uppercase;
   color: white;
   position: relative;
-  left: 180px;
-  bottom: 70px;
+  left: 10em;
+  bottom: 4em;
 }
 .clase_nav{
   position: relative;
-  top: 50px;
-  left: 50px;
+  top: 3em;
+  left: 1em;
   list-style: none;
-  font-size: 20px;
+  font-size: 1.35em;
 }
 .clase_linea2, .clase_linea3{
-  margin-top: 50px;
+  margin-top: 2em;
 }
 .clase_a, .clase_a2, .clase_a3{
-  color: white;
   text-decoration: none;
 }
 .clase_a:hover, .clase_a2:hover, .clase_a3:hover{
