@@ -94,19 +94,8 @@
       <img src="assets/images/logo-laboratoria.svg">
       <i class="fa fa-bars fa-2x" id="hamburguesa" aria-hidden="true"></i>
       <i class="fa fa-times" id="equis" aria-hidden="true"></i>
-<<<<<<< HEAD
     </header>
-    <section id="menu_local">
-      <nav>
-          <ul>
-              <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>  Overview</a></li>
-              <li><a href="#" id="estudiantes"><i class="fa fa-graduation-cap"  aria-hidden="true"></i>  Estudiantes</a></li>
-              <div id="contenedor-estudiantes"></div>
-              <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>  Profesores</a></li>
-          </ul>
-      </nav>
-  </section>
-
+ <!-- Menú despegable sedes -->
   <select name="menu" id="sedes" class="menu_sedes">
    <option selected value="0"> Elige una Sede </option>
        <optgroup label="Chile">
@@ -121,8 +110,6 @@
    </optgroup>
 </select>
   <div id="contenedor_menu_hamburguesa" class="contenedor-hamburguesa"></div>
-  <div id="contenedor_menu" class="contenedor"></div>
-=======
       <select id="idiomas" class="clase-idiomas">
         <option selected value="0">Elige un idioma</option>
         <option value="1">Español</option>
@@ -130,14 +117,8 @@
         <option value="3">Portugues</option>
       </select> 
    </header>
-  <!-- Menú despegable sedes -->
-  <select id="paises" class="clase-paises">
-        <option selected value="0">Elige una sede</option>
-        <option value="1">Santiago</option>
-        <option value="2">Ciudad de México</option>
-        <option value="3">Lima</option>
-        <option value="4">Arequipa</option>
-  </select>
+ 
+
   <!-- Menú local -->
   <section id="menu_local"> 
       <div class="tab">
@@ -146,7 +127,16 @@
         <button class="tablinks" onclick="openCity(event, 'Profesores')"><strong>Profesores</strong></button>
       </div>
 
-      <div id="Overview" class="tabcontent"></div>
+      <div id="Overview" class="tabcontent">
+      <div class="graficos">
+      <tr>
+      <td><div id="chart_div_alumnas_total"></div></td>
+      <td><div id="chart_div_alumnas_total_scl"></div></td>
+      <td><div id="chart_div_alumnas_abandono_scl"></div></td>
+      <td><div id="chart_nps_scl20172_sprint2"><img src="assets/images/Net-Promoter-Score-Graphic.png" class="nps_muestra"></div></td>
+    </tr>
+    </div>
+    </div>
       <div id="Estudiantes" class="tabcontent">
         <h2 class="especializacion">Especialización:</h2>
         <input type="checkbox" class="javascript"><label class="javascript" for="javascript"> Javascript</label></input>
@@ -158,16 +148,8 @@
   <!-- Contenedores vacios para usarlos en javascript -->
   <div id="contenedor_menu_hamburguesa" class="contenedor-hamburguesa"></div>
   <div id="contenedor_menu" class="contenedor"></div>      
->>>>>>> 57757ce3aacb94dd8c93a94b9a5b1d1fae9280f6
 
-<div class="graficos">
-  <tr>
-      <td><div id="chart_div_alumnas_total"></div></td>
-      <td><div id="chart_div_alumnas_total_scl"></div></td>
-      <td><div id="chart_div_alumnas_abandono_scl"></div></td>
-      <td><div id="chart_nps_scl20172_sprint2"><img src="assets/images/Net-Promoter-Score-Graphic.png" class="nps_muestra"></div></td>
-    </tr>
-</div>
+
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->

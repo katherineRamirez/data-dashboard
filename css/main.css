@@ -28,13 +28,14 @@ header i{
   position: relative;
   right: 5em;
   color: #848484;
+  bottom: 0.30em;
 }
 /* Estilo al menú desplegable de las sedes */
-.clase-paises{
+.menu_sedes{
   display: inline-block;
   position: relative;
   left: 1em;
-  margin-top: 5em;
+  bottom: 3em;
 }
 /* Estilo al ícono equis */
 .fa-times{
@@ -47,13 +48,15 @@ header i{
   display: inline-block;
   position: relative;
   left: 78em;
-  bottom: 2em;
+  bottom: 5em;
 }
 /* Estilo al menú local */
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
+    position: relative;
+    bottom: 4em;
 }
 
 /* Estilo a los botones del menú local */
@@ -82,7 +85,7 @@ div.tab button.active {
 
 /* Estilos al contenido de los tabs */
 .tabcontent {
-    display: none;
+    display: block;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
@@ -116,7 +119,6 @@ div.tab button.active {
 }
 /* Estilo del div creado en javascript que contiene el menú al hacer click en el ícono hamburguesa */
 .clase_div{
-  position: relative;
   background: #424242;
   width: 25em;
   height: 30em;
@@ -145,12 +147,6 @@ div.tab button.active {
   left: 1em;
   list-style: none;
   font-size: 1.35em;
-}
-.clase_linea2, .clase_linea3{
-  margin-top: 2em;
-}
-.clase_a, .clase_a2, .clase_a3{
-  text-decoration: none;
 }
 /* Efecto hover que cambia el color de fondo de la lista del menú creado en javascript */
 .clase_a:hover, .clase_a2:hover, .clase_a3:hover{
