@@ -6,25 +6,95 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChartAlumnasTotal);
+      google.charts.setOnLoadCallback(drawChartAlumnasTotalSede);
+      google.charts.setOnLoadCallback(drawChartAlumnasTotalAbandonoSede);
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChartAlumnasTotal() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Sedes');
+        data.addColumn('number', 'Total Alumnas');
+        data.addRows([
+          ['Arequipa', 30],
+          ['Ciudad de México', 50],
+          ['Lima', 66],
+          ['Santiago', 95]
+        ]);
+
+        // Set chart options
+        var options = {'title':'Alumnas por Sede (Ciudad)',
+                       'width':550,
+                       'height':400};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div_alumnas_total'));
+        chart.draw(data, options);
+      }
+
+      function drawChartAlumnasTotalSede() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Santiago');
+        data.addColumn('number', 'Alumnas por Generación');
+        data.addRows([
+          ['SCL 2016-2', 11],
+          ['SCL 2017-1', 23],
+          ['SCL 2017-2', 61]
+        ]);
+
+        // Set chart options
+        var options = {'title':'Alumnas Total Santiago (Por Generación)',
+                       'width':550,
+                       'height':400};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div_alumnas_total_scl'));
+        chart.draw(data, options);
+      }
+        function drawChartAlumnasTotalAbandonoSede() {
+
+          // Create the data table.
+          var data = new google.visualization.DataTable();
+          data.addColumn('string', 'Santiago');
+          data.addColumn('number', 'Alumnas por Generación');
+          data.addRows([
+            ['SCL 2016-2', 8],
+            ['SCL 2017-1', 9],
+            ['SCL 2017-2', 35]
+          ]);
+
+          // Set chart options
+          var options = {'title':'Alumnas Total Abandono Santiago (Por Generación)',
+                         'width':550,
+                         'height':400};
+
+          // Instantiate and draw our chart, passing in some options.
+          var chart = new google.visualization.PieChart(document.getElementById('chart_div_alumnas_abandono_scl'));
+          chart.draw(data, options);
+      }
+    </script>
   </head>
   <body>
   <header>
       <img src="assets/images/logo-laboratoria.svg">
-
       <i class="fa fa-bars fa-2x" id="hamburguesa" aria-hidden="true"></i>
       <i class="fa fa-times" id="equis" aria-hidden="true"></i>
-
-      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
     </header>
     <section id="menu_local">
-      <ul>
-        <li class="pais">Sede
-          <li>Chile
-            <li>Santiago</li>
-         </li>
-
-
-  
       <nav>
           <ul>
               <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>  Overview</a></li>
@@ -34,7 +104,6 @@
           </ul>
       </nav>
   </section>
-
 
   <select name="menu" id="sedes" class="menu_sedes">
    <option selected value="0"> Elige una Sede </option>
@@ -51,68 +120,15 @@
 </select>
   <div id="contenedor_menu_hamburguesa" class="contenedor-hamburguesa"></div>
   <div id="contenedor_menu" class="contenedor"></div>
-  </body>
 
-
-          <li>Perú
-            <li>Lima</li>
-            <li>Arequipa</li>
-          </li>
-
-        </li>
-
-        <li class="anio">Año
-          <li>2014</li>
-          <li>2015</li>
-          <li>2016</li>
-          <li>2017
-            <li>Generacion 1</li>
-            <li>Generacion 2</li>
-          </li>
-        </li>
-
-        <li class="sprint">Sprint
-          <li>Estadisticas Globales</li>
-          <li>Selecciona Sprint
-            <li>Sprint 1</li>
-            <li>Sprint 2</li>
-            <li>Sprint 3</li>
-          </li>
-          <li>Selecciona Turno
-            <li>AM</li>
-            <li>PM</li>
-          </li>
-        </li>
-
-          <li class="puntaje">Puntuacion
-              <li>Profesores</li>
-              <li>Jedi Masters</li>
-          </li>
-      </ul>
-    </section>
-    <section class="seccion_datos_generales">
-      <div id="bandera_pais">
-        <p>País</p>
-      <div class="bandera_muestra"></div>
-      </div>
-      <div id="alumnas_activas">
-        <i class="fa fa-user-plus fa-2x" aria-hidden="true"></i>
-        <p>Total Alumnas</p>
-        <h4>(Numero Aqui)</h4></div>
-      <div id="alumnas_retiradas">
-        <i class="fa fa-user-times fa-2x" aria-hidden="true"></i>
-        <p>Total Alumnas Retiradas</p>
-        <h4>(Numero Aqui)</h4></div>
-    </section>
-    <section class="grafico_1">
-    <div id="cuadro_texto">
-      <h3>Criterio de Evaluación Mínimo Requerido: 70%</h3><br>
-      <br>
-      <p>Alumnas que Superan Meta de Puntos: (texto)</p><br>
-      <p>Alumnas que No Superan Meta de Puntos: (texto)</p>
-    </div>
-    </section>
-
+<div class="graficos">
+  <tr>
+      <td><div id="chart_div_alumnas_total"></div></td>
+      <td><div id="chart_div_alumnas_total_scl"></div></td>
+      <td><div id="chart_div_alumnas_abandono_scl"></div></td>
+      <td><div id="chart_nps_scl20172_sprint2"><img src="assets/images/Net-Promoter-Score-Graphic.png" class="nps_muestra"></div></td>
+    </tr>
+</div>
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
 		<!-- Aquí va tus archivos JS -->
