@@ -142,15 +142,28 @@ div.tab button.active {
 }
 /* Estilo de la lista del menú creado en javascript */
 .clase_nav{
+    color: white;
   position: relative;
   top: 3em;
   left: 1em;
   list-style: none;
   font-size: 1.35em;
 }
+.clase_a, .clase_a2, .clase_a3{
+  color: white;
+  text-decoration: none;
+}
+.clase_a2{
+  position: relative;
+  top: 2em;
+}
+.clase_a3{
+  position: relative;
+  top: 4em;
+}
 /* Efecto hover que cambia el color de fondo de la lista del menú creado en javascript */
 .clase_a:hover, .clase_a2:hover, .clase_a3:hover{
-  background: #FFBF00;
+  background: #848484;
   padding: 20px 60px;
 }
 
