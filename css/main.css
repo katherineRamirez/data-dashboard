@@ -1,6 +1,7 @@
 /*
  * Estilos de tu proyecto
  */
+ /* Estilos a toda mi web */
 *{
   margin: 0;
   padding: 0;
@@ -13,6 +14,7 @@ header{
   position: relative;
   display: inline-block;
 }
+/* Estilos del logo de laboratoria */
 header img{
   width: 20%;
   height: auto;
@@ -20,36 +22,41 @@ header img{
   margin-left: 40%;
   margin-right: 35%;
 }
+/* Estilo al ícono hamburguesa */
 header i{
   display: inline-block;
   position: relative;
   right: 5em;
   color: #848484;
 }
+/* Estilo al menú desplegable de las sedes */
 .clase-paises{
   display: inline-block;
   position: relative;
   left: 1em;
   margin-top: 5em;
 }
+/* Estilo al ícono equis */
 .fa-times{
   position: relative;
   display: inline-block;
   font-size: 2em;
 }
+/* Estilo al menú desplegable de los idiomas */
 .clase-idiomas{
   display: inline-block;
   position: relative;
   left: 78em;
   bottom: 2em;
 }
+/* Estilo al menú local */
 div.tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
 }
 
-/* Style the buttons inside the tab */
+/* Estilo a los botones del menú local */
 div.tab button {
     margin-top: 2em;
     background-color: inherit;
@@ -63,46 +70,51 @@ div.tab button {
     text-transform: uppercase;
 }
 
-/* Change background color of buttons on hover */
+/* Usando hover para cambiar el color de fondo a los botones del menú desplegable */
 div.tab button:hover {
     background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
+/* Creando un active/current al div de la clase tab */
 div.tab button.active {
     background-color: #ccc;
 }
 
-/* Style the tab content */
+/* Estilos al contenido de los tabs */
 .tabcontent {
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
 }
+/* Estilo del título del h2, sección estudiantes del menú local */
 .especializacion{
   position: relative;
   top: 2em;
   left: 3em;
 }
+/* Estilo del input javascript */
 .javascript{
   position: relative;
   top: 6em;
   left: 3em;
   font-size: 1.30em;
 }
+/* Estilo del input ux */
 .ux{
   position: relative;
   top: 10em;
   right: 4em;
   font-size: 1.30em;
 }
+/* Estilo del input front-design */
 .front-design{
   position: relative;
   top: 14em;
   right: 11em;
   font-size: 1.30em;
 }
+/* Estilo del div creado en javascript que contiene el menú al hacer click en el ícono hamburguesa */
 .clase_div{
   position: relative;
   background: #424242;
@@ -111,18 +123,14 @@ div.tab button.active {
   left: 0.10em;
   border-radius: 0.50em;
 }
-.contenedor{
-  display: inline-block;
-  position: relative;
-  margin-left: 20em;
-}
-
+/* Estilo de la imagen del menú creado en javascript */
 .clase_img{
   width: 30%;
   position: relative;
   top: 1em;
   left: 1em;
 }
+/* Estilo del nombre (Valentina Smith) del menú creado en javascript */
 .clase_p{
   text-transform: uppercase;
   color: white;
@@ -130,6 +138,7 @@ div.tab button.active {
   left: 10em;
   bottom: 4em;
 }
+/* Estilo de la lista del menú creado en javascript */
 .clase_nav{
   position: relative;
   top: 3em;
@@ -143,6 +152,7 @@ div.tab button.active {
 .clase_a, .clase_a2, .clase_a3{
   text-decoration: none;
 }
+/* Efecto hover que cambia el color de fondo de la lista del menú creado en javascript */
 .clase_a:hover, .clase_a2:hover, .clase_a3:hover{
   background: #FFBF00;
   padding: 20px 60px;

@@ -5,19 +5,24 @@
 // Puedes hacer uso de la base de datos a través de la variable `data`
 console.log(data);
 
+/* Hacemos el llamado de los id creados en html para usarlos en javascript */
 var hamburguesa = document.getElementById("hamburguesa");
 var equis = document.getElementById("equis");
 var contenedorHamburguesa = document.getElementById("contenedor_menu_hamburguesa");
 
+/* Asignando atributo para ocultar el botón equis */
 	equis.setAttribute("style","visibility:hidden");
 
+/* Función al botón hamburguesa para crear un menú para agregar, remover estudiante y agregar sprint */
 hamburguesa.addEventListener("click", function(){
 
+/* Al hacer click en el ícono hamburguesa éste se oculta y aparece el ícono de equis */
 	 hamburguesa.setAttribute("style","visibility:hidden");
 	 equis.setAttribute("style","visibility:visible");
 
-
+/* Creando el menú para agregar, remover estudiante y agregar sprint */
 	var divPerfil = document.createElement("div");
+	/* Creando una clase al div para darle estilos en css */
 		divPerfil.classList.add("class", "clase_div");
 	var imgPerfil = document.createElement("img");
 		imgPerfil.setAttribute("src", "assets/images/foto.jpg");
@@ -48,7 +53,7 @@ hamburguesa.addEventListener("click", function(){
 		aPerfil3.textContent = "Agregar Sprint";
 		aPerfil3.classList.add("class", "clase_a3");
 
-	
+/* Asignar padre a los huerfanos */
 	liPerfil.appendChild(aPerfil);
 	liPerfil2.appendChild(aPerfil2);
 	liPerfil3.appendChild(aPerfil3);
@@ -68,7 +73,7 @@ hamburguesa.addEventListener("click", function(){
 
 	})
 
-	 
+/* Función para las tabs */
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
